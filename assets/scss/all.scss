@@ -1,0 +1,11 @@
+// @import './layout/header.scss';
+// @import './layout/footer.scss';
+// @import './pages/index.scss';
+
+@use "./foundation";
+@use "./component";
+
+@use "./layout";
+@use './pages';
+
+

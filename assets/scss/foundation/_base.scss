@@ -1,0 +1,93 @@
+@use "../global" as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+
+html {
+  width: 100%;
+  font-size: 62.5%;
+  -webkit-tap-highlight-color: initial;
+  scroll-behavior: smooth;
+
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  // font-family: $font-default;
+  font-family: "Noto Sans TC", sans-serif;;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  // color: $color-text-default;
+  -webkit-text-size-adjust: none;
+  @include sp {
+    font-size: 3.75vw;
+  }
+}
+
+main {
+  // position: relative;
+  // z-index: 0;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+summary {
+  display: block;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+
+
+
+.only-pc {
+  display: block !important;
+
+  @include tab {
+    display: none !important;
+  }
+}
+
+.only-pc-tab {
+  display: block !important;
+
+  @include sp {
+    display: none !important;
+  }
+}
+
+.only-tab {
+  display: none !important;
+
+  @include tab {
+    display: block !important;
+  }
+
+  @include sp {
+    display: none !important;
+  }
+}
+
+.only-tab-sp {
+  display: none !important;
+
+  @include tab {
+    display: block !important;
+  }
+}
+
+.only-sp {
+  display: none !important;
+
+  @include sp {
+    display: block !important;
+  }
+}
