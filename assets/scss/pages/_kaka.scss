@@ -1,0 +1,52 @@
+
+.wrap{
+  padding-bottom: 24px;
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.box-sm{
+    display: flex;
+  img{
+    width: 96px;
+    height: 96px;
+  }
+  &__text{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  &+&{
+    margin-top: 24px;
+  }
+  &__text{
+    width: 328px;
+    h3{
+    font-size: 20px;
+    line-height: 1.2;
+    }
+    p{
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+}
+
+.box-right{
+ 
+  img{
+    width: 216px;
+    height: 216px;
+  }
+}
+
+footer{
+  p{
+    background-color: #eee;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 120px;
+  }
+}
