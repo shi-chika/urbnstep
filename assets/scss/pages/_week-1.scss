@@ -1,0 +1,15 @@
+@use "../global" as *;
+
+.p-story__footer{
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: #F8F9FA;
+  p{
+    text-align: center;
+    font-size: 14px;
+    color: #6C757D;
+  }
+  p+p{
+    margin-top: 4px;
+  }
+}

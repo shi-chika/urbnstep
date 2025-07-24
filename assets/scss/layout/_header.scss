@@ -11,6 +11,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include sp{
+      padding-top: 13px;
+      padding-bottom: 13px;
+    }
   }
   &__nav-links{
     display: flex;

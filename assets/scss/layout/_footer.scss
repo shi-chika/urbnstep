@@ -1,6 +1,67 @@
 @use "../global" as *;
 
-// .footer{
-//   background: #69F0AE;
-//   font-size: 64px;
-// }
+
+.l-footer{
+  &__nav{
+    // border: red 1px solid;
+    padding-top: 64px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #DEE2E6;
+    @include sp{
+      padding-top: 32px;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+
+    }
+  }
+  &__logo{
+    img{
+      width: 129px;
+      height: 46px;
+    }
+    a{
+      display: inline-block;  
+    }
+    a+a{
+      margin-left: 40px;
+    }
+  }
+  &__link{
+    display: flex;
+    font-weight: 500;
+    @include sp{
+      flex-direction: column;
+    }
+    li{
+      @include sp{
+        padding: 12px;
+      }
+    }
+    li+li{
+      margin-left: 40px;
+      @include sp{
+        margin-left: 0;
+      }
+    }
+  }
+  &__copyright{
+    padding-top: 32px;
+    padding-bottom: 64px;
+    @include sp{
+      padding-bottom: 32px;
+    }
+  
+  p{
+    font-size: 14px;
+    color: #6C757D;
+    text-align: center;
+  }
+  p+p{
+    margin-top: 4px;
+   }
+  }
+}

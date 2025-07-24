@@ -9,11 +9,20 @@
   color: $text--default;
   letter-spacing: 0.05em;
 
+  &__heading{
+    margin-bottom: 24px;
+    @include sp{
+      margin-bottom: 16px;
+    }
+  }
   &__banner{
     padding-top: 151px;
     padding-bottom: 151px;
     background: url(../images/story-mv.png) no-repeat center / cover;
+    @include sp{
+      background: url(../images/story-mv-sp.png) no-repeat center / cover;
 
+    }
   }
   &__title{
     font-weight: bold;

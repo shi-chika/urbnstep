@@ -1,12 +1,29 @@
 @use "../global" as *;
 
 .p-product-list{
+  margin-top: 24px;
   margin-bottom: 48px;
-  display: grid;
-  grid-template-columns: 196px 1fr;
-  column-gap: 24px;
+  display: flex;
+  justify-content: space-between;
 
+  @include sp{
+    margin-top: 12px;
+    margin-bottom: 32px;
+  }
+  &__title{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 700;
+    @include sp{
+      padding-top: 9.5px;
+      padding-bottom: 9.5px;
+    }
+  }
   &__filter-bar{
+    flex-shrink: 0;
+    // min-width: 162px;
    li+li {
     margin-top: 16px;
    }
@@ -22,10 +39,20 @@
     }
   }
   &__cards{
+    width: 83.02%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 48px 24px;
     
+    @include tab{
+      width: 78%;
+      grid-template-columns: repeat(2,1fr);
+    }
+    @include sp{
+      width: 100%;
+      grid-template-columns: repeat(2,1fr);
+      gap: 24px 12px;      
+    }
   }
   &__name{
     display: block;
@@ -33,6 +60,10 @@
     margin-bottom: 4px;
     font-weight: 700;
     line-height: 1.2;
+    @include sp{
+    margin-top: 8px;
+    margin-bottom: 0px;
+    }
   }
   &__price{
     display: block;
@@ -88,25 +119,3 @@
 
 }
 
-.p-product-list-sale{
-  background-color: #E8FEC5;
-  margin-top: 80px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  display: flex;
-  justify-content: center;  
-  align-items: center;  
-  
-  &__text{
-    font-size: 24px;
-    font-weight: 700;
-  }
-  &__btn{
-    display: inline-block;
-    margin-left: 24px;
-    color: #fff;
-    background-color: #212529;
-    padding: 12px 24px;
-    border-radius: 4px;
-  }
-}
