@@ -8,7 +8,87 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <h1>我是contact</h1>
+    <ul class="c-breadcrumb">
+      <li class="c-breadcrumb__item"><a class="c-breadcrumb__link" href="./index.html">首頁</a></li>
+       
+      <li class="c-breadcrumb__item"><span aria-current="page">所有商品</span></li>
+    </ul>
+
+    <div class="c-container">
+      <h2 class="c-heading --black --h3">所有商品</h2>
+      <div class="p-product-list">
+        <ul class="p-product-list__filter-bar">
+          <li><a class="p-product-list__filter-link active" href="">所有商品</a></li>
+          <li><a class="p-product-list__filter-link" href="">慢跑鞋</a></li>
+          <li><a class="p-product-list__filter-link" href="">滑板鞋</a></li>
+          <li><a class="p-product-list__filter-link" href="">厚底鞋</a></li>
+          <li><a class="p-product-list__filter-link" href="">限定 / 聯名企劃</a></li>
+          
+        </ul>
+        
+        <ul class="p-product-list__cards">
+          <li>
+            <img src="../assets/images/product-list/product.png" alt="">
+            <span class="p-product-list__name">PLATFORM 404</span>
+            <span class="p-product-list__price">NT$2,600</span></li>
+          <li>
+            <img src="../assets/images/product-list/product-1.png" alt="">
+            <span class="p-product-list__name">PLATFORM 404</span>
+            <span class="p-product-list__price">NT$2,600</span></li>
+          <li>
+            <img src="../assets/images/product-list/product-2.png" alt="">
+            <span class="p-product-list__name">VM001</span>
+            <span class="p-product-list__price">NT$2,600</span></li>
+          <li>
+            <img src="../assets/images/product-list/product-3.png" alt="">
+            <span class="p-product-list__name">Melty Kiss</span>
+            <span class="p-product-list__price">NT$4,000</span></li>
+          <li>
+            <img src="../assets/images/product-list/product-4.png" alt="">
+            <span class="p-product-list__name">BOOMBLOK</span>
+            <span class="p-product-list__price">NT$3,200</span></li>
+          <li>
+            <img src="../assets/images/product-list/product-5.png" alt="">
+            <span class="p-product-list__name">BOOMBLOK</span>
+            <span class="p-product-list__price">NT$3,200</span></li>
+          <li>
+            <img src="../assets/images/product-list/product-6.png" alt="">
+            <span class="p-product-list__name">R:UNER</span>
+            <span class="p-product-list__price">NT$4,000</span></li>
+          <li>
+            <img src="../assets/images/product-list/product-7.png" alt="">
+            <span class="p-product-list__name">Sugar Snap</span>
+            <span class="p-product-list__price">NT$4,000</span></li>
+          <li>
+            <img src="../assets/images/product-list/product-8.png" alt="">
+            <span class="p-product-list__name">Neofoam</span>
+            <span class="p-product-list__price">NT$4,000</span></li>
+          <li class="only-sp">
+            <img src="../assets/images/product-list/product-9.png" alt="">
+            <span class="p-product-list__name">Buttermood</span>
+            <span class="p-product-list__price">NT$4,000</span></li>
+
+        </ul>
+
+      </div>
+
+      <div class="p-product-list__page-btn">
+        <a class="--arrow --left disabled-btn" href="#"><img src="../assets/images/icon-left-arrow.svg" alt=""></a>
+        <a class="--number" href="">1</a>
+        <a class="--number" href="">2</a>
+        <a class="--number" href="">3</a>
+        <a class="--number" href="">...</a>
+        <a class="--number" href="">10</a>
+        <a class="--arrow --right" href="#"><img src="../assets/images/icon-right-arrow.svg" alt=""></a>
+        
+      </div>        
+    </div>
+
+    <div class="p-product-list-sale">
+      <p class="p-product-list-sale__text">加入會員取得 9 折優惠</p>
+      <button class="p-product-list-sale__btn">馬上註冊</button>
+    </div>  
+
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>

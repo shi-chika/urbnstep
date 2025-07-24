@@ -1,0 +1,47 @@
+@use "../global" as *;
+
+.c-breadcrumb {
+  padding-top: 32px;
+  padding-bottom: 24px;
+  max-width: 1296px;
+  margin: 0 auto;
+  display: flex;
+  z-index: 10;
+  
+  @include sp {
+    flex-wrap: wrap;
+    max-width: 70vw;
+    margin: 4px 0 ;
+    padding: 0 30px;
+  }
+
+  &__item {
+    flex-shrink: 0;
+    font-weight: 500;
+    @include sp{
+      line-height: 180%; 
+    }
+  }
+  &__item:has(a){
+    color: #6C757D;
+
+    &::after {
+      content: "/";
+      margin: 0 12px;
+      display: inline-block;
+      color: #DEE2E6;
+      font-weight: 700;
+      @include sp {
+        margin: 0 10px;
+        
+      }
+    }
+    &:hover{
+      opacity: 0.6;
+    }
+  }
+  
+  
+}
+
+

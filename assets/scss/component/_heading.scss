@@ -2,16 +2,26 @@
 
 .c-heading{
   line-height: 1.2;
+  font-weight: 700;
 
-  &--black{
-    margin-bottom: 24px;
-    font-weight: bold;
+  &.--h2{
+    font-size: 32px;
+  }
+  &.--h3{
+    font-size: 28px;
+  }
+  &.--h4{
     font-size: 24px;
   }
-
-  &--green{
-    font-weight: bold;
+  &.--h5{
     font-size: 20px;
+  }
+
+  &.--black{
+    color: $text--default;
+    margin-bottom: 24px;
+  }
+  &.--green{
     color: $text--green;
   }
 

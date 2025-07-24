@@ -1,0 +1,11 @@
+@use "../global" as *;
+
+.c-container {
+  max-width: 1296px;
+  margin: 0 auto;
+ 
+  @include sp{
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
+  }
+}

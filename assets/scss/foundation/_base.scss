@@ -20,8 +20,9 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.5;
-  // color: $color-text-default;
+  color: $text--default;
   -webkit-text-size-adjust: none;
+  letter-spacing: 0.05em;
   @include sp {
     font-size: 3.75vw;
   }
@@ -39,6 +40,9 @@ img {
   vertical-align: bottom;
 }
 
+a:hover{
+  opacity: 0.8;
+}
 summary {
   display: block;
 }

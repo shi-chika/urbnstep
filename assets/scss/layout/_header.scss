@@ -1,6 +1,40 @@
 @use "../global" as *;
 
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+
+.l-header{
+  max-width: 1296px;
+  margin: 0 auto;
+  &__nav{
+    // border: red 1px solid;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__nav-links{
+    display: flex;
+    align-items: center;
+    h1{
+      margin-right: 48px;
+    }
+    img{
+      width: 129px;
+      height: 46px;
+    }
+    a{
+      display: inline-block;  
+    }
+    a+a{
+      margin-left: 40px;
+    }
+  }
+  &__member-icon{
+    img{
+      width: 48px;
+      height: 48px;
+    }
+    
+  }
+  
 }
