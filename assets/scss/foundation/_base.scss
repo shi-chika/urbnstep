@@ -4,7 +4,6 @@
 
 
 html {
-  width: 100%;
   font-size: 62.5%;
   -webkit-tap-highlight-color: initial;
   scroll-behavior: smooth;
@@ -12,10 +11,6 @@ html {
 }
 
 body {
-  width: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  // font-family: $font-default;
   font-family: "Noto Sans TC", sans-serif;;
   font-size: 1.6rem;
   font-weight: 400;
@@ -23,26 +18,31 @@ body {
   color: $text--default;
   -webkit-text-size-adjust: none;
   letter-spacing: 0.05em;
-  @include sp {
-    font-size: 3.75vw;
-  }
+  // @include sp {
+  //   font-size: 3.75vw;
+  // }
 }
 
-main {
-  // position: relative;
-  // z-index: 0;
-}
+// main {
+//   position: relative;
+//   z-index: 0;
+// }
 
 img {
   width: 100%;
   max-width: 100%;
   height: auto;
   vertical-align: bottom;
+  object-fit: cover;
 }
 
 a:hover{
   opacity: 0.8;
 }
+button:hover{
+  opacity: 0.8;
+}
+
 summary {
   display: block;
 }

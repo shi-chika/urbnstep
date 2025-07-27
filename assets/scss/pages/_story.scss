@@ -1,9 +1,6 @@
 @use "../global" as *;
 
-.container-sm{
-  max-width: 856px;
-  margin: 0 auto;
-}
+
 .p-story{
   line-height: 1.5;
   color: $text--default;
@@ -20,8 +17,11 @@
     padding-bottom: 151px;
     background: url(../images/story-mv.png) no-repeat center / cover;
     @include sp{
-      background: url(../images/story-mv-sp.png) no-repeat center / cover;
-
+    padding-top: 87px;
+    padding-bottom: 87px;
+    min-height: 240px;
+    width: 100%; 
+    background: url(../images/story-mv-sp.png) no-repeat center / cover;
     }
   }
   &__title{
@@ -34,20 +34,32 @@
     span:nth-of-type(1){
       margin-bottom: 16px;
       font-size: 40px;
+      line-height: 1.2;
+      @include sp{
+        font-size: 28px;
+      }
     }
     span:nth-of-type(2){
       font-size: 28px;
+      line-height: 1.2;
+      @include sp{
+        font-size: 20px;
+      }
     }  
   }
   &__intro{
+    margin-top: 64px;
+    margin-bottom: 48px;    
     padding-top: 32px;
     padding-bottom: 32px;
-    
-    margin-top: 64px;
-    margin-bottom: 48px;
-
     background-color: $bg--green;
     text-align: center;
+    @include sp{
+    margin-top: 32px;
+    margin-bottom: 32px;    
+    padding: 24px;
+    text-align: start;
+    }
   }
   &__intro-heading{
     margin-bottom: 12px;
@@ -65,6 +77,10 @@
   &__main-pic{
     max-width: 1076px;
     margin: 0 auto;
+    @include sp{
+      padding-left: 12px;
+      padding-right: 12px;
+    }
   }
 }
 
@@ -74,9 +90,16 @@
     padding-top: 24px;
     padding-bottom: 48px;
     border-bottom: 1px solid  $border--gray;
+    @include sp{
+    padding-top: 16px;
+    padding-bottom: 32px;
+
+    }
     p+p{
       margin-top: 16px;
-      letter-spacing: normal;
+      @include sp{
+        margin-top: 12px;
+      }
     }
     
   }
@@ -85,6 +108,11 @@
     padding-top: 48px;
     padding-bottom: 48px;
     border-bottom: 1px solid  $border--gray;
+    @include sp{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+    }
 
   }
 
@@ -95,13 +123,33 @@
     border-right: 1px solid #212529;
   }
   &__brand-history-list{
+    li{
+      position: relative;
+      padding-left: 22px;
+    }
+    li::after{
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 4px;
+      border-radius: 50%;
+      width: 4px;
+      height: 4px;
+      background-color: #212529;
+      @include sp{
+      top: 12px;
+      transform: translateY(0);
+
+      }
+    }
     li+li{
       margin-top: 12px;
     }
   }
   &__brand-concept-list{
     li{
-      padding-left: 9px;
+      padding-left: 10px;
       border-left: 3px solid #DEE2E6;
     }
     li+li{
@@ -111,6 +159,9 @@
 
   &__brand-story{
     margin-bottom: 64px;
+    @include sp{
+      margin-bottom: 32px;
+    }
   }
   &__brand-link-list{
       color: $text--green;
@@ -147,6 +198,16 @@
       background-color: $green;
     }
   }
+
+  &__subtitle-sp{
+    @include sp{
+    display: block;
+    &+&{
+      margin-top: 8px;
+     }
+    } 
+  }
+  
 }
 
 .p-story-footer{
