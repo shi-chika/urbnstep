@@ -6,11 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
   </head>
-  <body>
+  <body class="p-top">
     <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/dog.jpg" style="width: 300px;" alt="cat">
+    <div class="p-top-nav">
+      <ul class="p-top-nav__row">
+          <li><a class="p-top-nav__link active" href="./product-list.html">商品列表</a></li>
+          <li><a class="p-top-nav__link" href="./brand-story.html">品牌故事</a></li>
+      </ul>
+    </div>    
+    <div class="p-top-mv">
+       
+      <div class="p-top-mv__content">
+        <h2 class="p-top-mv__heading --lg">URBNSTEP</h2>
+        <p class="p-top-mv__heading --sm">Your Step, Your Statement</p>
+
+        <div><a class="p-top-mv__btn" href="">立即選購</a></div>    
+      </div>
+     
+    </div>
+
+    <div class="p-top-newArrival">
+      <h3 class="p-top-newArrival__heading">
+        <span class="--en">New Arrival</span>
+        <span class="--zh">新品上市</span>
+      </h3>
+
+      <ul class="p-top-newArrival__cards">
+        <li>
+          <img src="../assets/images/top/new-arrival-01.png" alt="">
+          <span class="p-top-newArrival__card-name">Monoverse</span>
+          <span class="p-top-newArrival__card-price">NT$3,600</span>
+        </li>
+         <li>
+          <img src="../assets/images/top/new-arrival-02.png" alt="">
+          <span class="p-top-newArrival__card-name">PLATFORM 404</span>
+          <span class="p-top-newArrival__card-price">NT$2,600</span>
+        </li>
+         <li>
+          <img src="../assets/images/top/new-arrival-03.png" alt="">
+          <span class="p-top-newArrival__card-name">URBN Force</span>
+          <span class="p-top-newArrival__card-price">NT$3,200</span>
+        </li>
+         <li>
+          <img src="../assets/images/top/new-arrival-04.png" alt="">
+          <span class="p-top-newArrival__card-name">Mode90</span>
+          <span class="p-top-newArrival__card-price">NT$4,000</span>
+        </li>
+      </ul>
+
+      <div class="p-top-newArrival">
+        <p class="p-top-newArrival__hotSelling-heading">熱銷補貨</p>
+        <ul class="p-top-newArrival__hotSelling-cards">
+          <li class="p-top-newArrival__hotSelling-card">
+            <span class="p-top-newArrival__hotSelling-tag">人氣 No.1</span>
+            <img src="../assets/images/top/hot-selling-01.png" alt=""></li>
+          <li class="p-top-newArrival__hotSelling-card">
+            <span class="p-top-newArrival__hotSelling-tag">人氣 No.1</span>
+            <img src="../assets/images/top/hot-selling-02.png" alt=""></li>
+          <li class="p-top-newArrival__hotSelling-card">
+            <span class="p-top-newArrival__hotSelling-tag">人氣 No.1</span>
+            <img src="../assets/images/top/hot-selling-03.png" alt=""></li>
+          <li class="p-top-newArrival__hotSelling-card">
+            <span class="p-top-newArrival__hotSelling-tag">人氣 No.1</span>
+            <img src="../assets/images/top/hot-selling-04.png" alt=""></li>
+
+        </ul>
+      </div>
+
+      
+      
+    </div>
 
     <%- include('./layout/footer'); -%>
 

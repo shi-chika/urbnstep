@@ -1,1 +1,187 @@
 @use "../global" as *;
+
+
+.p-top-nav{
+  display: none;
+  
+  @include sp{
+    display: block;
+  }
+  &__row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+  &__link{
+    display: inline-block;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-weight: 500;
+    background-color: #F5FEE7;
+    text-align: center;
+
+    &.active{
+      background-color: #E8FEC5;
+    }
+  }
+  
+}
+
+.p-top-mv{
+  // position: relative;
+  background-image: url('../images/top/top-mv.png'); /* 背景圖片 */
+  background-repeat: no-repeat; /* 是否重複 */
+  background-position: center center; /* 對齊位置 */
+  background-size: cover; /* 圖片縮放方式 */
+  min-height: 800px;
+  @include sp{
+    background-image: url('../images/top/top-mv-sp.png'); /* 背景圖片 */
+    min-height: 480px;
+
+  }
+  &__content{
+    min-height: 800px;
+    height: 100%;
+    // border: 1px red solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10.41%;
+    @include sp{
+      padding-left: 6.4%;
+      min-height: 480px;
+    }
+  }
+  &__heading{
+    color: #fff;
+    
+    &.--lg{
+      font-size: 64px;
+      font-weight: 700;
+      padding-bottom: 16px;
+      @include sp{
+        font-size: 48px;
+        padding-bottom: 2vw;
+      }
+    }
+    &.--sm{
+      margin-bottom: 48px;
+      font-size: 28px;
+      font-weight: 700;
+      @include sp{
+        font-size: 20px;
+        margin-bottom: 8vw;
+      }
+    }
+  }
+  &__btn{
+    display: inline-block;
+    padding: 12px 24px;
+    color: $text--default;
+    background-color: $btn-bg;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+
+
+}
+
+.p-top-newArrival{
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 64px 12px;
+  @include sp{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  &__heading{
+    text-align: center;
+    margin-bottom: 32px;
+    @include sp{
+      margin-bottom: 24px;
+    }
+    span{
+      display: block;
+    }
+    & .--en{
+      margin-bottom: 12px;
+      font-weight: 700;
+      font-size: 48px;
+      @include sp{
+        margin-bottom: 8px;
+        font-size: 32px;
+      }
+    }
+    & .--zh{
+      font-weight: 700;
+      font-size: 32px;
+      @include sp{
+        font-size: 24px;
+      }
+    }
+  }
+  &__cards{
+    padding-bottom: 64px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px 24px;
+
+    @include sp{
+      padding-bottom: 40px;
+      gap: 24px 12px;
+    }
+    span{
+      display: block;
+    }
+  }
+  &__card-name{
+    margin-top: 12px;
+    margin-bottom: 4px;  
+    font-weight: 700;
+    font-size: 20px;
+    
+    @include sp{
+      margin-top: 8px;
+      margin-bottom: 0px;
+      font-size: 16px;
+    }
+  }
+  &__card-price{
+    font-weight: 500;
+    line-height: 150%;
+  }
+}
+
+.p-top-newArrival{
+  padding-top: 64px;
+  padding-bottom: 64px;
+
+  &__hotSelling-heading{
+    margin-bottom: 16px;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  &__hotSelling-cards{
+    display: flex;
+    column-gap: 24px;
+  }
+  &__hotSelling-card{
+    position: relative;
+    background-color: #F8F9FA;
+    img{
+      width: 306px;
+      height: 306px;
+    }
+  }
+  &__hotSelling-tag{
+    padding: 8px 12px;
+    display: inline-block;
+    position: absolute;
+    font-size: 14px;
+    font-weight: 500;
+    color: #57A203;
+    background-color: #F5FEE7;
+    line-height: 1.5;
+  }
+}
