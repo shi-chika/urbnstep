@@ -1,0 +1,14 @@
+
+@use "../global" as *;
+
+.c-btn{
+  display: inline-block;
+  padding: 12px 24px;
+  color: $text--default;
+  border-radius: 4px;
+  font-weight: 500;
+
+  &.--green{
+    background-color: $btn-bg;
+  }
+}
